@@ -1,5 +1,5 @@
 //Anor Batista Esteves Neto 
-//  04/01/2015  21:10
+//  04/01/2015  
 //  Attiny send IR Remote Key with button or clap
 
 #include <attiny85_IR.h>
