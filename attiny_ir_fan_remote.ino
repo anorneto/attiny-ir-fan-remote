@@ -1,6 +1,6 @@
 //Anor Batista Esteves Neto 
 //  04/01/2015  
-//  Attiny send IR Remote Key with button or clap
+//  Attiny send IR Remote Key with button or clap(still working on this)
 
 #include <attiny85_IR.h>
 
@@ -9,7 +9,7 @@
 #define ledPin     0      // attiny physical pin 5 , normal led for visual feedback of when we are sending an ir command
 
 //defining constants
-#define TRIGGER 550
+//#define TRIGGER 550
 
 
 IRsend irsend; // IR led on physical pin 6 (D1) , the IR output will be always on attiny physical pin 6
