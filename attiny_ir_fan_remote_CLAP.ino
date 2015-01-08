@@ -92,10 +92,7 @@ void read_mic(void){
   micValue = analogRead(micPin);  
 }
 
-/**
-* Purpose:  A clap is detected when the sensor value is greater than the average plus 
-*     an offset.  The offset might need to be fine tuned for different sound sensors.
-*/
+// a clap is detected when the sensor value is greater than the average plus trigger value
 boolean clap_detected()
 {
     return micValue > average + TRIGGER;
@@ -115,6 +112,7 @@ void check_claps(){
     }
 }
 
+//funcion to detect claps, uses recursion
 int detect_claps(int numClaps)
 {
   int clapNum = numClaps;
